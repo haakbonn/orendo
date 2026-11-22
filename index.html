@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Орендо — оренда квартири без нагадувань і хаосу в чатах</title>
+<meta name="description" content="Застосунок для приватних орендодавців: оплата, комуналка, договір і податковий звіт в одному місці.">
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3X9P8L34FW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3X9P8L34FW');
+</script>
+
+<style>
+  :root{--bg:#f7f8fb;--card:#fff;--text:#1d2433;--muted:#5b6475;--accent:#1f6feb;--accent2:#0f9d58;--line:#e3e7ef}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 16px}
+  header{background:#fff;border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  .logo{font-weight:800;font-size:20px;color:var(--accent)}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:12px 22px;border-radius:10px;font-weight:600;border:0;cursor:pointer}
+  .btn:hover{filter:brightness(1.08)}
+  .btn.small{padding:8px 14px;font-size:14px}
+  .btn.ghost{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+  section{padding:56px 0;border-bottom:1px solid var(--line)}
+  h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0 0 16px}
+  h2{font-size:26px;margin:0 0 20px}
+  .hero{background:linear-gradient(135deg,#eaf2ff,#f7f8fb)}
+  .hero p.lead{font-size:18px;color:var(--muted);max-width:620px}
+  .note{font-size:13px;color:var(--muted);margin-top:10px}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+  .card h3{margin:0 0 8px;font-size:17px}
+  .card p{margin:0;color:var(--muted)}
+  ul.pains{padding-left:20px;margin:0}
+  ul.pains li{margin:8px 0}
+  blockquote{margin:20px 0 0;padding:12px 16px;border-left:4px solid var(--accent);background:#fff;color:var(--muted);font-style:italic}
+  .num{font-size:32px;font-weight:800;color:var(--accent)}
+  .step{display:flex;gap:12px;align-items:flex-start}
+  .step b{flex:0 0 32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center}
+  .price{font-size:28px;font-weight:800}
+  .price small{font-size:14px;color:var(--muted);font-weight:400}
+  .card ul{padding-left:18px;color:var(--muted)}
+  .cta{text-align:center;background:#fff}
+  details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+  summary{cursor:pointer;font-weight:600}
+  details p{color:var(--muted);margin:10px 0 0}
+  footer{padding:24px 0;color:var(--muted);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="logo">Орендо</span>
+    <a class="btn small" href="https://docs.google.com/forms/d/e/1FAIpQLSed3c65XEjucqSp_rUDo2DAokh_KSa6IamE5tvv4N4HBhvMQg/viewform" target="_blank" rel="noopener" data-cta="header">Ранній доступ</a>
+  </div>
+</header>
+
+<!-- 1. Hero / UVP -->
+<section class="hero">
+  <div class="wrap">
+    <h1>Оренда квартири — 10 хвилин на місяць, без нагадувань і хаосу в чатах</h1>
+    <p class="lead">Для власників 1–5 квартир: орендар сам надсилає показники через Viber-бота, «Орендо» рахує комуналку, нагадує про оплату і готує звіт для податкової за новими правилами.</p>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSed3c65XEjucqSp_rUDo2DAokh_KSa6IamE5tvv4N4HBhvMQg/viewform" target="_blank" rel="noopener" data-cta="hero">Отримати ранній доступ безкоштовно</a>
+    <p class="note">Один об'єкт — безкоштовно назавжди. Анкета займе 2 хвилини.</p>
+  </div>
+</section>
+
+<!-- 2. Problem -->
+<section>
+  <div class="wrap">
+    <h2>Вам це знайомо?</h2>
+    <ul class="pains">
+      <li>Щомісяця випрошуєте фото лічильників у Viber і рахуєте комуналку на калькуляторі.</li>
+      <li>Тарифи змінились — і кілька місяців рахували неправильно.</li>
+      <li>Незручно нагадувати орендарю, що оплата затримується вже тиждень.</li>
+      <li>Чули про реєстрацію договорів і нові податки, але не розумієте, що робити.</li>
+      <li>Договір «десь у папці», фото квартири — у галереї серед тисячі інших.</li>
+    </ul>
+    <blockquote>«Хай краще програма нагадує, ніж я — тоді це не особисте» — Андрій, власник двох квартир у Харкові</blockquote>
+  </div>
+</section>
+
+<!-- 3. Solution -->
+<section>
+  <div class="wrap">
+    <h2>Що змінить «Орендо»</h2>
+    <div class="grid">
+      <div class="card"><h3>Гроші приходять вчасно</h3><p>Нагадування орендарю надсилає сервіс, а не ви — стосунки не псуються.</p></div>
+      <div class="card"><h3>Комуналка рахується сама</h3><p>Показники від орендаря + актуальні тарифи вашого міста = готова сума.</p></div>
+      <div class="card"><h3>Спокій щодо податків</h3><p>Покрокова підказка з реєстрації договору та річний звіт для декларації.</p></div>
+      <div class="card"><h3>Усе в одному місці</h3><p>Договір, фотоопис квартири, історія оплат — у телефоні, з доступом для родичів.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. Social proof -->
+<section>
+  <div class="wrap">
+    <h2>Ми не вигадали цю проблему</h2>
+    <div class="grid">
+      <div class="card"><div class="num">79%</div><p>орендодавців ведуть облік у Viber/Telegram (опитування 28 власників)</p></div>
+      <div class="card"><div class="num">4,21 з 5</div><p>— наскільки бентежать реєстрація договору і податки за новими правилами</p></div>
+      <div class="card"><div class="num">4 з 5</div><p>учасників інтерв'ю щомісяця проходять той самий ритуал: випросити показники, порахувати, нагадати</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. How it works -->
+<section>
+  <div class="wrap">
+    <h2>Як це працює</h2>
+    <div class="grid">
+      <div class="step"><b>1</b><p>Додаєте квартиру і місто — тарифи підтягуються автоматично.</p></div>
+      <div class="step"><b>2</b><p>Надсилаєте орендарю посилання на Viber-бота — нічого встановлювати не треба.</p></div>
+      <div class="step"><b>3</b><p>Щомісяця орендар вносить показники, а ви отримуєте готову суму й підтвердження оплати.</p></div>
+      <div class="step"><b>4</b><p>У кінці року — звіт для декларації в один клік.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing">
+  <div class="wrap">
+    <h2>Скільки коштує</h2>
+    <div class="grid">
+      <div class="card"><h3>Безкоштовний</h3><div class="price">0 грн</div><ul><li>1 об'єкт</li><li>Нагадування і розрахунок комуналки</li><li>Viber-бот для орендаря</li></ul></div>
+      <div class="card"><h3>«Плюс»</h3><div class="price">99 грн <small>/ міс</small></div><ul><li>1 об'єкт</li><li>Податковий звіт і підказки з реєстрації договору</li><li>Фотоопис квартири</li></ul></div>
+      <div class="card"><h3>«Портфель»</h3><div class="price">199 грн <small>/ міс</small></div><ul><li>2–5 об'єктів</li><li>Дохідність кожної квартири після витрат</li><li>Спільний доступ для родичів</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2>Отримайте ранній доступ</h2>
+    <p>Дайте відповідь на 8 коротких питань і залиште email — запросимо вас у закрите бета-тестування.<br>Що буде далі: протягом 2 тижнів ми напишемо вам із запрошенням. Жодних списань.</p>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSed3c65XEjucqSp_rUDo2DAokh_KSa6IamE5tvv4N4HBhvMQg/viewform" target="_blank" rel="noopener" data-cta="signup">Заповнити анкету (2 хв)</a>
+  </div>
+</section>
+
+<!-- 7. FAQ -->
+<section>
+  <div class="wrap">
+    <h2>Питання</h2>
+    <details data-q="tenant"><summary>Чи треба орендарю встановлювати застосунок?</summary><p>Ні. Орендар надсилає показники і підтверджує оплату у Viber-боті.</p></details>
+    <details data-q="tax"><summary>Ви подаватимете декларацію за мене?</summary><p>Ні, ми готуємо звіт з усіма сумами і нагадуємо про дедлайни. Подаєте ви — через Електронний кабінет або Дію.</p></details>
+    <details data-q="data"><summary>Хто бачить мої дані?</summary><p>Тільки ви і ті, кому ви дали доступ. Дані не передаються третім особам.</p></details>
+    <details data-q="charge"><summary>Чи спишуть гроші автоматично?</summary><p>Ні. Безкоштовний тариф не потребує картки, а перед будь-якою оплатою ми нагадаємо.</p></details>
+    <details data-q="cities"><summary>У яких містах працюють тарифи?</summary><p>На старті — Київ, Львів, Харків, Дніпро, Одеса. Для інших міст тарифи можна внести вручну.</p></details>
+  </div>
+</section>
+
+<footer>«Орендо» — MVP продукту в розробці (лабораторна робота №3, «Менеджмент в продуктовому ІТ»). Оплата ще не відкрита, нічого не списується.</footer>
+
+<script>
+  // Кожне натискання CTA — окрема подія CTA_click з позицією кнопки
+  document.querySelectorAll('[data-cta]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      gtag('event', 'CTA_click', { cta_position: a.dataset.cta, link_url: a.href });
+    });
+  });
+  // Відкриття питань FAQ
+  document.querySelectorAll('details[data-q]').forEach(function (d) {
+    d.addEventListener('toggle', function () {
+      if (d.open) gtag('event', 'faq_open', { question: d.dataset.q });
+    });
+  });
+  // Перегляд блоку цін
+  var priced = false, pricing = document.getElementById('pricing');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (e, obs) {
+      if (e[0].isIntersecting && !priced) { priced = true; gtag('event', 'pricing_view'); obs.disconnect(); }
+    }, { threshold: 0.5 }).observe(pricing);
+  }
+</script>
+</body>
+</html>
